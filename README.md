@@ -2,8 +2,6 @@
 
 A plugin for Atlassian Jira to support connecting to a SAML 2.0 IdP.
 
-This library adheres to [SemVer](http://semver.org). Pre v1.0.0 is considered alpha level software.
-
 ## Usage
 Please see the [wiki page](https://github.com/bitium/jira-saml-plugin/wiki/Installation-and-Usage-Instructions) for usage information
 
@@ -16,9 +14,7 @@ Note: this assumes you have a JDK installed and configured.
   For other OSes, see [here](https://developer.atlassian.com/server/framework/atlassian-sdk/downloads/).  
   
   For Ubuntu/Debian Linux:
-  1. ```sudo sh -c 'echo "deb https://packages.atlassian.com/atlassian-sdk-deb stable contrib" >>/etc/apt/sources.list'
-
-```
+  1. ```sudo sh -c 'echo "deb https://packages.atlassian.com/atlassian-sdk-deb stable contrib" >>/etc/apt/sources.list'```
   2. ```wget https://packages.atlassian.com/api/gpg/key/public```
   3. ```apt-key add public```
   4. ```sudo apt-get update```
