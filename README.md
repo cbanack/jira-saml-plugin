@@ -1,6 +1,6 @@
 # Jira SAML 2.0 Plugin
 
-A plugin for Atlassian Jira to support connecting to a SAML 2.0 IdP.
+A plugin that lets Atlassian JIRA support connecting to a SAML 2.0 IdP.
 
 ## Usage
 Please see the [wiki page](https://github.com/bitium/jira-saml-plugin/wiki/Installation-and-Usage-Instructions) for usage information
@@ -9,24 +9,22 @@ Please see the [wiki page](https://github.com/bitium/jira-saml-plugin/wiki/Insta
 
 Note: this assumes you have a JDK installed and configured.
 
-### Install the Atlassian SDK
+### 1. Install the Atlassian SDK
 
-  For other OSes, see [here](https://developer.atlassian.com/server/framework/atlassian-sdk/downloads/).  
-  
-  For Ubuntu/Debian Linux:
+  For Ubuntu/Debian Linux (for other OSes, see [here](https://developer.atlassian.com/server/framework/atlassian-sdk/downloads/)):
   1. ```sudo sh -c 'echo "deb https://packages.atlassian.com/atlassian-sdk-deb stable contrib" >>/etc/apt/sources.list'```
   2. ```wget https://packages.atlassian.com/api/gpg/key/public```
   3. ```apt-key add public```
   4. ```sudo apt-get update```
   5. ```sudo apt-get install atlassian-plugin-sdk```
 
-### Install the Atlassian SAML Commons to your global Maven Repo
+### 2. Install the Atlassian SAML Commons to your global Maven Repo
 
   1. ```git clone https://github.com/bitium/atlassian-saml.git```
   2. ```cd atlassian-saml```
   3. ```atlas-mvn clean install```
   
-### Compile the install Plugin ###
+### 3. Compile the install Plugin ###
 
   1. ```git clone https://github.com/cbanack/jira-saml-plugin.git```
   2. ```cd jira-saml-plugin```
@@ -38,7 +36,7 @@ Note: this assumes you have a JDK installed and configured.
   8. go to the "SAML 2.0 Plugin Configuration" section in the "system" admin area.
   9. you're now looking at the UI for this plugin.
 
-### Run the plugin in a local JIRA instance (for development)
+### 4. (Optional) Run the plugin in a local JIRA instance
 
   1. go to the ```jira-saml-plugin``` folder
   2. run ```atlas-run``` to (re)build the plugin and start a local jira
