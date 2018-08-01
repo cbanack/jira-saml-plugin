@@ -24,15 +24,15 @@ Note: this assumes you have a JDK installed and configured.
   2. ```cd atlassian-saml```
   3. ```atlas-mvn clean install```
   
-### 3. Compile the install Plugin ###
+### 3. Compile the install the Plugin ###
 
   1. ```git clone https://github.com/cbanack/jira-saml-plugin.git```
   2. ```cd jira-saml-plugin```
   3. ```atlas-mvn clean package```
-  4. the plugin's JAR can be found in the ```target``` folder
-  5. in JIRA, login and go to the "Manage Add-ons" admin area
+  4. the plugin's JAR can now be found in the ```target``` folder
+  5. go to JIRA, login and go to the "Manage Add-ons" admin area
   6. select the option to "upload a plugin"
-  7. upload the JAR to install the plugin, or overwrite the previous installation
+  7. upload the JAR.  this installs the plugin overwriting any previous installation
   8. go to the "SAML 2.0 Plugin Configuration" section in the "system" admin area.
   9. you're now looking at the UI for this plugin.
 
@@ -40,8 +40,8 @@ Note: this assumes you have a JDK installed and configured.
 
   1. go to the ```jira-saml-plugin``` folder
   2. run ```atlas-run``` to (re)build the plugin and start a local jira
-  3. after everything compiles and jira starts, a URL will be displayed
-  4. enter the url into your browser
+  3. after everything compiles and JIRA starts, a URL will be displayed
+  4. enter the url into your browser to go to the local JIRA
     * username: ```admin```
     * password: ```admin```
   5. create a sample project so you can acccess the "system" admin area.
